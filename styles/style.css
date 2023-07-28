@@ -1,0 +1,72 @@
+p {
+    color: white;
+}
+
+.square {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+body {
+    background-image: url(../images/greenlain.jpg);
+    background-size: cover;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+}
+
+.wrapper-p {
+    margin-right: 15%;
+    font-size: 20px;
+}
+
+.wrapper-img {
+    width: 400px;
+}
+
+.wrapper span {
+    font-size: 26px;
+}
+
+.spin {
+    width: 250px;
+    animation: myAnim 1s ease 0S infinite normal forwards;
+}
+
+.spindiv {
+    display: flex;
+    justify-content: center;
+}
+
+.center-text-adaptiv {
+    margin-left: 15%;
+}
+
+@keyframes myAnim {
+	0% {
+		transform: rotate(0);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+@media (max-width: 1000px) {
+    .wrapper {
+        display: block;
+    }
+    .wrapper-p {
+        text-align: center;
+    }
+    .center-text-adaptiv {
+        text-align: center;
+        margin-left: 0;
+    }
+    body {
+        background-position-x: -200px;
+        background-position-y: 150px;
+    }
+}
